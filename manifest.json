@@ -1,0 +1,9 @@
+{
+    "name":"Busca por CEP",
+    "version":"1.0",
+    "description":"Busca informações do endereço a partir do CEP",
+    "browser_action":{
+        "default_popup":"index.html"
+    },
+    "manifest_version":2
+}
