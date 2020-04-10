@@ -12,12 +12,14 @@ $(document).ready(function () {
         var cep = valorCep.replace('-','');
 
         $.getJSON (`https://viacep.com.br/ws/${cep}/json`, function(data){
+            
             var informacoes = "<tbody>"
+            
             $.each(data, function(chave, valor){
                 
                 if(!valor) valor = "N/A";
                 
-                informacoes = informacoes + `<tr><td><b>${chave}</b></td><td>${valor}</td></tr>`
+                informacoes = informacoes + `<tr><td class="font-weight-bold">${chave}</td><td>${valor}</td></tr>`
             });
 
             var informacoes = informacoes + "</tbody>";
