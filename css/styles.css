@@ -1,8 +1,6 @@
 body {
     width: 400px;
     height: 300px;
-}
 
-.meu-botao {
-    margin-left: 0;
+    background-color: #fafafa;
 }
